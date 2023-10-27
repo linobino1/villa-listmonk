@@ -1,6 +1,6 @@
-# Listmonk example
+# Listmonk
 
-This example deploys self-hosted version of [Listmonk](https://listmonk.app/). 
+This deploys [Listmonk](https://listmonk.app/) at [railway](https://railway.app). 
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/listmonk)
 
@@ -15,6 +15,8 @@ This example deploys self-hosted version of [Listmonk](https://listmonk.app/).
 - Fill in the variables
 - Deploy! 🚄
 
-## 📝 Notes
-- Source repo: https://github.com/knadh/listmonk
-- Docs: https://listmonk.app/docs/
+### Media Uploads
+
+either configure S3 or:
+- create a volume for media uploads and attach it to the listmonk container with the mount path `/uploads`
+- in the listmonk UI settings configure upload path as `/uploads`
